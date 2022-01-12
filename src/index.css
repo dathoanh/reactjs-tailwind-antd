@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    overflow: auto;
+    height: 100%;
+    position: relative;
+    max-width: 100%;
+    color: #666666;
+}
+
+:after, :before {
+    margin: 0;
+    padding: 0;
+}
