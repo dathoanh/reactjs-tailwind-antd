@@ -4,22 +4,18 @@ import { Form, Input, Button, Checkbox } from 'antd';
 const LoginForm = () => {
   return (
     <div
-      className="p-0 bg-cover bg-center relative z-[1] after:absolute after:h-full after:w-full after:top-0 after:left-0 after:-z-[1] after:bg-black/20 sm:p-12 lg:p-[100px]"
-      style={{
-        backgroundImage: `url(${background})`,
-        // 'backgroundPosition': '50%'
-      }}
+      className="p-0 bg-cover bg-center relative z-10 after:absolute after:h-full after:w-full after:top-0 after:left-0 after:-z-10 after:bg-black/20 sm:p-12 lg:p-24 bg-[url('images/login-background.jpg')]"
     >
-      <div className="bg-white h-auto max-w-[1170px] mx-auto overflow-hidden rounded-xl min-h-[600px]  shadow-[0_0_60px_10px_rgba(85,44,44,0.2)] md:flex md:h-[calc(100vh-200px)] ">
+      <div className="bg-white h-auto max-w-screen-xl mx-auto overflow-hidden rounded-xl min-h-[600px] drop-shadow-2xl md:flex md:h-[calc(100vh-200px)] ">
         <div
-          className="relative px-7 py-12 z-[1] bg-no-repeat bg-bottom bg-gradient-to-br from-[#3f77d1] to-[#508def] overflow-hidden block text-center w-full max-w-full basis-full
+          className="relative px-7 py-12 z-10 bg-no-repeat bg-bottom bg-gradient-to-br from-blue-700/70 to-blue-500 overflow-hidden block text-center w-full max-w-full basis-full
           
-          before:w-36 before:h-36 before:rounded-xl before:rotate-45 before:bg-[#759dd9] before:-left-9 before:top-1/3 before:absolute before:-z-[1] before:shadow-[0_0_0_60px_hsl(0deg,0%,100%,0.1)] before:animate-[dzmove_5s_linear_infinite]
+          before:w-36 before:h-36 before:rounded-xl before:rotate-45 before:bg-blue-100/30 before:-left-9 before:top-1/3 before:absolute before:-z-10 before:ring-offset-[60px] before:ring-1 before:ring-offset-white/10 before:animate-[dzmove_5s_linear_infinite]
           
-          after:w-36 after:h-36 after:rounded-xl after:rotate-45 after:bg-[#2a68cd] after:-right-8 after:-top-8 after:absolute after:-z-[1] after:shadow-[0_0_0_60px_hsl(0deg,0%,100%,0.1)] after:animate-[dzmove_5s_linear_infinite] 
+          after:w-36 after:h-36 after:rounded-xl after:rotate-45 after:bg-blue-700/50 after:-right-8 after:-top-8 after:absolute after:-z-10 after:ring-offset-[60px] after:ring-offset-white/20 after:ring-1 after:animate-[dzmove_5s_linear_infinite] 
           
           sm:p-12
-          md:table md:basis-3/5 md:max-w-[60%] md:p-12 md:text-left 
+          md:table md:basis-3/5 md:p-12 md:text-left 
           "
         >
           <a className="relative mb-5 no-underline block md:absolute md:mb-0 md:flex md:items-center" href="/">
@@ -93,7 +89,7 @@ const LoginForm = () => {
               <li className="mx-1 list-none md:mr-2 md:ml-0">
                 <a
                   href="/"
-                  className="h-11 w-11 text-white rounded-xl leading-[2.25] text-xl inline-block text-center border-0 bg-white/20 transition-all ease-linear duration-500
+                  className="h-11 w-11 text-white rounded-xl leading-loose text-xl inline-block text-center border-0 bg-white/20 transition-all ease-linear duration-500
                   hover:bg-white hover:text-black
                   "
                 >
@@ -103,7 +99,7 @@ const LoginForm = () => {
               <li className="mx-1 list-none md:mr-2 md:ml-0">
                 <a
                   href="/"
-                  className="h-11 w-11 text-white rounded-xl leading-[2.25] text-xl inline-block text-center border-0 bg-white/20 transition-all ease-linear duration-500
+                  className="h-11 w-11 text-white rounded-xl leading-loose text-xl inline-block text-center border-0 bg-white/20 transition-all ease-linear duration-500
                   hover:bg-white hover:text-black
                   "
                 >
@@ -113,7 +109,7 @@ const LoginForm = () => {
               <li className="mx-1 list-none md:mr-2 md:ml-0">
                 <a
                   href="/"
-                  className="h-11 w-11 text-white rounded-xl leading-[2.25] text-xl inline-block text-center border-0 bg-white/20 transition-all ease-linear duration-500
+                  className="h-11 w-11 text-white rounded-xl leading-loose text-xl inline-block text-center border-0 bg-white/20 transition-all ease-linear duration-500
                   hover:bg-white hover:text-black
                   "
                 >
@@ -128,12 +124,12 @@ const LoginForm = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-full basis-full flex justify-center items-center md:max-w-[40%] md:basis-2/5">
+        <div className="max-w-full basis-full flex justify-center items-center md:basis-2/5">
           <div className="p-10 flex-shrink-0 w-full max-w-full">
             <div className="px-2 py-8 md:px-[calc(30px/-2)]">
               <div className="mb-6">
-                <h3 className="text-black font-bold text-[32px] leading-relaxed">Sign in</h3>
-                <p className="text-base text-[#666] leading-loose">
+                <h3 className="text-black font-bold text-3xl leading-relaxed">Sign in</h3>
+                <p className="text-base leading-loose">
                   Sign in by entering information below
                 </p>
               </div>
