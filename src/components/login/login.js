@@ -3,22 +3,23 @@ import { Form, Input, Button, Checkbox } from 'antd';
 
 const LoginForm = () => {
   return (
-    <div
-      className="p-0 bg-cover bg-center relative z-10 after:absolute after:h-full after:w-full after:top-0 after:left-0 after:-z-10 after:bg-black/20 sm:p-12 lg:p-24 bg-[url('images/login-background.jpg')]"
-    >
-      <div className="bg-white h-auto max-w-screen-xl mx-auto overflow-hidden rounded-xl min-h-[600px] drop-shadow-2xl md:flex md:h-[calc(100vh-200px)] ">
+    <div className="p-0 bg-cover bg-center relative z-10 after:absolute after:h-full after:w-full after:top-0 after:left-0 after:-z-10 after:bg-black/20 sm:p-12 lg:p-24 bg-[url('images/login-background.jpg')]">
+      <div className="bg-white h-screen max-w-screen-xl mx-auto overflow-hidden rounded-xl drop-shadow-2xl md:flex lg:h-full">
         <div
           className="relative px-7 py-12 z-10 bg-no-repeat bg-bottom bg-gradient-to-br from-blue-700/70 to-blue-500 overflow-hidden block text-center w-full max-w-full basis-full
           
-          before:w-36 before:h-36 before:rounded-xl before:rotate-45 before:bg-blue-100/30 before:-left-9 before:top-1/3 before:absolute before:-z-10 before:ring-offset-[60px] before:ring-1 before:ring-offset-white/10 before:animate-[dzmove_5s_linear_infinite]
+          before:w-36 before:h-36 before:rounded-xl before:rotate-45 before:bg-blue-100/30 before:-left-9 before:top-1/3 before:absolute before:-z-10 before:ring-offset-[60px] before:ring-offset-white/10 before:ring-0 before:animate-dzmove
           
-          after:w-36 after:h-36 after:rounded-xl after:rotate-45 after:bg-blue-700/50 after:-right-8 after:-top-8 after:absolute after:-z-10 after:ring-offset-[60px] after:ring-offset-white/20 after:ring-1 after:animate-[dzmove_5s_linear_infinite] 
+          after:w-36 after:h-36 after:rounded-xl after:rotate-45 after:bg-blue-700/50 after:-right-8 after:-top-8 after:absolute after:-z-10 after:ring-offset-[60px] after:ring-offset-white/20 after:ring-0 after:animate-dzmove
           
           sm:p-12
           md:table md:basis-3/5 md:p-12 md:text-left 
           "
         >
-          <a className="relative mb-5 no-underline block md:absolute md:mb-0 md:flex md:items-center" href="/">
+          <a
+            className="relative mb-5 no-underline block md:absolute md:mb-0 md:flex md:items-center"
+            href="/"
+          >
             <svg
               width={64}
               height={64}
@@ -47,7 +48,7 @@ const LoginForm = () => {
               viewBox="0 0 108 44"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className='hidden md:inline'
+              className="hidden md:inline"
             >
               <path
                 d="M11.0979 43.58C7.81657 43.58 5.2559 43.0893 3.4159 42.108C1.60657 41.1573 0.701904 39.5933 0.701904 37.416C0.701904 36.2813 0.962571 35.2693 1.4839 34.38C2.0359 33.5213 2.87924 32.632 4.0139 31.712C3.4619 31.344 3.03257 30.8687 2.7259 30.286C2.4499 29.7033 2.3119 29.09 2.3119 28.446C2.3119 27.986 2.41924 27.5107 2.6339 27.02C2.87924 26.5293 3.3699 25.7013 4.1059 24.536C2.02057 23.0027 0.977904 20.764 0.977904 17.82C0.977904 15.0293 1.82124 12.9593 3.5079 11.61C5.22524 10.23 7.6019 9.53999 10.6379 9.53999C11.9259 9.53999 13.4746 9.73933 15.2839 10.138L22.6899 9.90799V14.83L19.2399 14.554C19.6386 15.198 19.8992 15.75 20.0219 16.21C20.1752 16.67 20.2519 17.2987 20.2519 18.096C20.2519 20.856 19.4699 22.834 17.9059 24.03C16.3419 25.1953 13.9652 25.778 10.7759 25.778C9.8559 25.778 9.15057 25.7167 8.6599 25.594C8.35324 26.33 8.1999 26.9587 8.1999 27.48C8.1999 28.124 8.50657 28.5227 9.1199 28.676C9.7639 28.7987 10.9446 28.8753 12.6619 28.906C15.0232 28.9673 16.8939 29.1513 18.2739 29.458C19.6846 29.7647 20.7732 30.3933 21.5399 31.344C22.3066 32.264 22.6899 33.6287 22.6899 35.438C22.6899 38.2287 21.7392 40.2833 19.8379 41.602C17.9366 42.9207 15.0232 43.58 11.0979 43.58ZM10.6839 21.086C13.0146 21.086 14.1799 19.9513 14.1799 17.682C14.1799 15.4433 13.0146 14.324 10.6839 14.324C8.32257 14.324 7.1419 15.4433 7.1419 17.682C7.1419 19.9513 8.32257 21.086 10.6839 21.086ZM11.5119 38.52C13.2599 38.52 14.5172 38.3207 15.2839 37.922C16.0812 37.5233 16.4799 36.91 16.4799 36.082C16.4799 35.3153 16.1886 34.8247 15.6059 34.61C15.0539 34.426 14.3946 34.3187 13.6279 34.288C12.8919 34.2573 12.4012 34.242 12.1559 34.242L8.0159 33.92C7.18791 34.748 6.7739 35.576 6.7739 36.404C6.7739 37.14 7.15724 37.6767 7.9239 38.014C8.72124 38.3513 9.91724 38.52 11.5119 38.52Z"
@@ -89,7 +90,7 @@ const LoginForm = () => {
               <li className="mx-1 list-none md:mr-2 md:ml-0">
                 <a
                   href="/"
-                  className="h-11 w-11 text-white rounded-xl leading-loose text-xl inline-block text-center border-0 bg-white/20 transition-all ease-linear duration-500
+                  className="h-11 w-11 text-white rounded-xl text-lg flex items-center justify-center text-center border-0 bg-white/20 transition-all ease-linear duration-500
                   hover:bg-white hover:text-black
                   "
                 >
@@ -99,7 +100,7 @@ const LoginForm = () => {
               <li className="mx-1 list-none md:mr-2 md:ml-0">
                 <a
                   href="/"
-                  className="h-11 w-11 text-white rounded-xl leading-loose text-xl inline-block text-center border-0 bg-white/20 transition-all ease-linear duration-500
+                  className="h-11 w-11 text-white rounded-xl text-lg flex items-center justify-center  text-center border-0 bg-white/20 transition-all ease-linear duration-500
                   hover:bg-white hover:text-black
                   "
                 >
@@ -109,7 +110,7 @@ const LoginForm = () => {
               <li className="mx-1 list-none md:mr-2 md:ml-0">
                 <a
                   href="/"
-                  className="h-11 w-11 text-white rounded-xl leading-loose text-xl inline-block text-center border-0 bg-white/20 transition-all ease-linear duration-500
+                  className="h-11 w-11 text-white rounded-xl text-lg flex items-center justify-center  text-center border-0 bg-white/20 transition-all ease-linear duration-500
                   hover:bg-white hover:text-black
                   "
                 >
@@ -119,43 +120,68 @@ const LoginForm = () => {
             </ul>
             <div className="mt-4 text-white/80">
               <p className="text-sm leading-6">
-                Copyright © Designed & Developed by 2021
+                Copyright © Designed & Developed by DexignZone 2021
               </p>
             </div>
           </div>
         </div>
         <div className="max-w-full basis-full flex justify-center items-center md:basis-2/5">
           <div className="p-10 flex-shrink-0 w-full max-w-full">
-            <div className="px-2 py-8 md:px-[calc(30px/-2)]">
+            <div className="px-2 py-8 md:px-0">
               <div className="mb-6">
-                <h3 className="text-black font-bold text-3xl leading-relaxed">Sign in</h3>
+                <h3 className="text-black font-bold text-3xl leading-relaxed">
+                  Sign in
+                </h3>
                 <p className="text-base leading-loose">
                   Sign in by entering information below
                 </p>
               </div>
               <form>
-                <div className='mb-4'>
-                  <label className='mb-4 text-sm'>
+                <div className="mb-4">
+                  <label className="mb-4 text-sm">
                     <strong>Email</strong>
                   </label>
-                  <input type="email" className='bg-transparent block border-b-2 border-b-black rounded-none w-full text-sm leading-6 text-black h-11 ' placeholder='Type your email address' defaultValue={"demo@example.com"} />
+                  <input
+                    type="email"
+                    className="bg-transparent block border-b-2 border-b-black rounded-none w-full text-sm leading-6 text-black h-11 "
+                    placeholder="Type your email address"
+                    defaultValue={'demo@example.com'}
+                  />
                 </div>
-                <div className='mb-4'>
-                  <label className='mb-4 text-sm'>
+                <div className="mb-4">
+                  <label className="mb-4 text-sm">
                     <strong>Password</strong>
                   </label>
-                  <input type="password" className='bg-transparent block border-b-2 border-b-black rounded-none w-full text-sm leading-6 text-black h-11 ' placeholder='Type your password' defaultValue={"123456"} />
+                  <input
+                    type="password"
+                    className="bg-transparent block border-b-2 border-b-black rounded-none w-full text-sm leading-6 text-black h-11 "
+                    placeholder="Type your password"
+                    defaultValue={'123456'}
+                  />
                 </div>
-                <div className='flex items-center mb-4 mt-6'>
-                  <input type="checkbox" className='mr-3 relative -top-2' id='checkbox_remember'/>
-                  <label htmlFor='checkbox_remember' className='text-sm mb-4'>Remember my reference</label>
+                <div className="flex items-center mb-4 mt-6">
+                  <input
+                    type="checkbox"
+                    className="mr-3 relative -top-2"
+                    id="checkbox_remember"
+                  />
+                  <label htmlFor="checkbox_remember" className="text-sm mb-4">
+                    Remember my reference
+                  </label>
                 </div>
-                <div className='text-center'>
-                  <button className='rounded-lg text-white bg-blue-600 block w-full leading-normal px-4 py-2'>Sign In</button>
+                <div className="text-center">
+                  <button className="rounded-lg text-white bg-blue-600 block w-full leading-normal px-4 py-2">
+                    Sign In
+                  </button>
                 </div>
               </form>
-              <div className='mt-2'>
-                <p className=''>Don't have an account? <a href="/" className='no-underline text-blue-600'>Sign Up</a></p>
+              <div className="mt-2">
+                <p className="">
+                  Don't have an account?{' '}
+                  <a href="/" className="no-underline text-blue-600">
+                    Sign Up
+                  </a>
+                </p>
               </div>
             </div>
           </div>

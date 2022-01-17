@@ -13,6 +13,9 @@ module.exports = {
           "100%": { transform: 'rotate(50deg)' },
         }
       },
+      animation: {
+        dzmove: 'dzmove 5s linear infinite'
+      }
     },
   },
   plugins: [],
